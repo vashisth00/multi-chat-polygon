@@ -13,13 +13,13 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
-  matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
-    if (e.matches) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  });
+  // matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
+  //   if (e.matches) {
+  //     document.body.classList.add("dark");
+  //   } else {
+  //     document.body.classList.remove("dark");
+  //   }
+  // });
 
   // We get the contract to deploy
   const CommentsContract = await hre.ethers.getContractFactory("Comments");
